@@ -1,0 +1,2209 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net11.0",
+    "targetDisplayName": ".NETCoreApp,Version=v11.0"
+  },
+  "analysisStartTime": "2026-10-27T21:08:20.3373398Z",
+  "analysisEndTime": "2026-10-27T21:08:23.1405749Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 14,
+      "issues": 6,
+      "incidents": 66,
+      "effort": 66
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 15,
+        "Optional": 4,
+        "Potential": 47,
+        "Information": 0
+      },
+      "category": {
+        "Project": 14,
+        "Api": 25,
+        "NuGet": 27
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 12,
+      "properties": {
+        "appName": "CleanArchitecture.Api",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 16,
+        "numberOfCodeFiles": 12,
+        "linesTotal": 838,
+        "linesOfCode": 745,
+        "totalApiScanned": 558,
+        "minLinesOfCodeToChange": 5,
+        "maxLinesOfCodeToChange": 5
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "51db0424-cfc0-426e-8e0a-72bd1d2836f9",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Authentication.JwtBearer, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.AspNetCore.Authentication.JwtBearer, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+            "snippet": "Microsoft.AspNetCore.Authentication.JwtBearer, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.AspNetCore.Authentication.JwtBearer, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.AspNetCore.Authentication.JwtBearer 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "02a2ab12-fe62-49cf-a411-4f94a853a3e8",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.OpenApi, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.OpenApi, and replace with new package Microsoft.AspNetCore.OpenApi 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.AspNetCore.OpenApi, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.OpenApi, and replace with new package Microsoft.AspNetCore.OpenApi 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+            "snippet": "Microsoft.AspNetCore.OpenApi, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.OpenApi, and replace with new package Microsoft.AspNetCore.OpenApi 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.AspNetCore.OpenApi, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.OpenApi, and replace with new package Microsoft.AspNetCore.OpenApi 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.AspNetCore.OpenApi 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.OpenApi",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b8af6919-90e2-4707-a2f2-ea36cce05fd9",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Design, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.EntityFrameworkCore.Design, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Design, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Design, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.EntityFrameworkCore.Design 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Design",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d8f56960-6889-488f-8533-d69d54bbdd35",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Proxies, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.EntityFrameworkCore.Proxies, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Proxies, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Proxies, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.EntityFrameworkCore.Proxies 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Proxies",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e6538ae7-ee7b-48d1-be4b-d2ab901531a9",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Caching.StackExchangeRedis, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Caching.StackExchangeRedis, and replace with new package Microsoft.Extensions.Caching.StackExchangeRedis 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.Extensions.Caching.StackExchangeRedis, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Caching.StackExchangeRedis, and replace with new package Microsoft.Extensions.Caching.StackExchangeRedis 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+            "snippet": "Microsoft.Extensions.Caching.StackExchangeRedis, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Caching.StackExchangeRedis, and replace with new package Microsoft.Extensions.Caching.StackExchangeRedis 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.Extensions.Caching.StackExchangeRedis, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Caching.StackExchangeRedis, and replace with new package Microsoft.Extensions.Caching.StackExchangeRedis 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.Extensions.Caching.StackExchangeRedis 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Caching.StackExchangeRedis",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f77476c4-c2f7-4885-bf7c-db8d850948b0",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, and replace with new package Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, and replace with new package Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+            "snippet": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, and replace with new package Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, and replace with new package Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "ee9c223d-769b-4d71-94b9-3f37ec558086",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        },
+        {
+          "incidentId": "e796165e-e456-4ad1-bb6b-6f1c95c7fc1a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var rabbitUri = new Uri(connectionString!);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\Extensions\\ConfigurationExtensions.cs",
+            "snippet": "var rabbitUri = new Uri(connectionString!);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "1274"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 22,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b9d58fc3-96c7-40e7-b0da-bd3e76ef52ca",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var rabbitUri = new Uri(connectionString!);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\Extensions\\ConfigurationExtensions.cs",
+            "snippet": "var rabbitUri = new Uri(connectionString!);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "properties": {
+              "CharCount": "1274"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 22,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "10a62cea-a2b8-4fa5-af34-ae3c91fdf26c",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Message no longer duplicated in Console log output ",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddLogging(x =\u003E x.AddSimpleConsole(console =\u003E\r\n{\r\n    console.TimestampFormat = \u0022[yyyy-MM-ddTHH:mm:ss.fff] \u0022;\r\n    console.IncludeScopes = true;\r\n}));",
+              "protected": "M:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddSimpleConsole(Microsoft.Extensions.Logging.ILoggingBuilder,System.Action{Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions})"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\Program.cs",
+            "snippet": "builder.Services.AddLogging(x =\u003E x.AddSimpleConsole(console =\u003E\r\n{\r\n    console.TimestampFormat = \u0022[yyyy-MM-ddTHH:mm:ss.fff] \u0022;\r\n    console.IncludeScopes = true;\r\n}));",
+            "protectedSnippet": "M:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddSimpleConsole(Microsoft.Extensions.Logging.ILoggingBuilder,System.Action{Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions})",
+            "label": "M:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddSimpleConsole(Microsoft.Extensions.Logging.ILoggingBuilder,System.Action{Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions})",
+            "properties": {
+              "CharCount": "6260"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/console-json-logging-duplicate-messages.md",
+                "isCustom": false
+              }
+            ],
+            "line": 127,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "7e5b3629-76c2-4564-842c-83f35b1162cd",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var factory = new ConnectionFactory\r\n            {\r\n                Uri = new Uri(rabbitConfiguration.ConnectionString),\r\n            };",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\Program.cs",
+            "snippet": "var factory = new ConnectionFactory\r\n            {\r\n                Uri = new Uri(rabbitConfiguration.ConnectionString),\r\n            };",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "6260"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 55,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d8b4fb15-bba9-4bd3-a77d-8972860b677f",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var factory = new ConnectionFactory\r\n            {\r\n                Uri = new Uri(rabbitConfiguration.ConnectionString),\r\n            };",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Api\\Program.cs",
+            "snippet": "var factory = new ConnectionFactory\r\n            {\r\n                Uri = new Uri(rabbitConfiguration.ConnectionString),\r\n            };",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "properties": {
+              "CharCount": "6260"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 55,
+            "column": 12
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 6,
+      "properties": {
+        "appName": "CleanArchitecture.AppHost",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 1,
+        "numberOfCodeFiles": 1,
+        "linesTotal": 25,
+        "linesOfCode": 25,
+        "totalApiScanned": 14,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "78b3cc1a-b056-4dca-8e51-df3859306833",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Aspire.Hosting.AppHost, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.AppHost, and replace with new package Aspire.Hosting.AppHost 13.6.4",
+              "protected": "Aspire.Hosting.AppHost, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.AppHost, and replace with new package Aspire.Hosting.AppHost 13.6.4"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+            "snippet": "Aspire.Hosting.AppHost, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.AppHost, and replace with new package Aspire.Hosting.AppHost 13.6.4",
+            "protectedSnippet": "Aspire.Hosting.AppHost, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.AppHost, and replace with new package Aspire.Hosting.AppHost 13.6.4",
+            "label": "Aspire.Hosting.AppHost 13.6.0",
+            "properties": {
+              "PackageId": "Aspire.Hosting.AppHost",
+              "PackageVersion": "13.6.0",
+              "PackageNewVersion": "13.6.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "dac58248-ef63-41a5-869d-99c046486fe1",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Aspire.Hosting.Orchestration.win-x64, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.Orchestration.win-x64, and replace with new package Aspire.Hosting.Orchestration.win-x64 13.6.4",
+              "protected": "Aspire.Hosting.Orchestration.win-x64, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.Orchestration.win-x64, and replace with new package Aspire.Hosting.Orchestration.win-x64 13.6.4"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+            "snippet": "Aspire.Hosting.Orchestration.win-x64, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.Orchestration.win-x64, and replace with new package Aspire.Hosting.Orchestration.win-x64 13.6.4",
+            "protectedSnippet": "Aspire.Hosting.Orchestration.win-x64, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.Orchestration.win-x64, and replace with new package Aspire.Hosting.Orchestration.win-x64 13.6.4",
+            "label": "Aspire.Hosting.Orchestration.win-x64 13.6.0",
+            "properties": {
+              "PackageId": "Aspire.Hosting.Orchestration.win-x64",
+              "PackageVersion": "13.6.0",
+              "PackageNewVersion": "13.6.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "82b8e34b-d41a-40ad-b0c4-e4b10745f330",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Aspire.Hosting.RabbitMQ, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.RabbitMQ, and replace with new package Aspire.Hosting.RabbitMQ 13.6.4",
+              "protected": "Aspire.Hosting.RabbitMQ, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.RabbitMQ, and replace with new package Aspire.Hosting.RabbitMQ 13.6.4"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+            "snippet": "Aspire.Hosting.RabbitMQ, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.RabbitMQ, and replace with new package Aspire.Hosting.RabbitMQ 13.6.4",
+            "protectedSnippet": "Aspire.Hosting.RabbitMQ, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.RabbitMQ, and replace with new package Aspire.Hosting.RabbitMQ 13.6.4",
+            "label": "Aspire.Hosting.RabbitMQ 13.6.0",
+            "properties": {
+              "PackageId": "Aspire.Hosting.RabbitMQ",
+              "PackageVersion": "13.6.0",
+              "PackageNewVersion": "13.6.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "c3cb92df-3465-4ee8-92c7-f261339c6bdd",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Aspire.Hosting.Redis, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.Redis, and replace with new package Aspire.Hosting.Redis 13.6.4",
+              "protected": "Aspire.Hosting.Redis, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.Redis, and replace with new package Aspire.Hosting.Redis 13.6.4"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+            "snippet": "Aspire.Hosting.Redis, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.Redis, and replace with new package Aspire.Hosting.Redis 13.6.4",
+            "protectedSnippet": "Aspire.Hosting.Redis, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.Redis, and replace with new package Aspire.Hosting.Redis 13.6.4",
+            "label": "Aspire.Hosting.Redis 13.6.0",
+            "properties": {
+              "PackageId": "Aspire.Hosting.Redis",
+              "PackageVersion": "13.6.0",
+              "PackageNewVersion": "13.6.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d0478568-04b8-4372-a52a-67f469e60171",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Aspire.Hosting.SqlServer, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.SqlServer, and replace with new package Aspire.Hosting.SqlServer 13.6.4",
+              "protected": "Aspire.Hosting.SqlServer, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.SqlServer, and replace with new package Aspire.Hosting.SqlServer 13.6.4"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+            "snippet": "Aspire.Hosting.SqlServer, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.SqlServer, and replace with new package Aspire.Hosting.SqlServer 13.6.4",
+            "protectedSnippet": "Aspire.Hosting.SqlServer, 13.6.0\n\nRecommandation\u00A0:\n\nRemove Aspire.Hosting.SqlServer, and replace with new package Aspire.Hosting.SqlServer 13.6.4",
+            "label": "Aspire.Hosting.SqlServer 13.6.0",
+            "properties": {
+              "PackageId": "Aspire.Hosting.SqlServer",
+              "PackageVersion": "13.6.0",
+              "PackageNewVersion": "13.6.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b4899a91-4516-496e-83dd-a72df623dea7",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.AppHost\\CleanArchitecture.AppHost.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "CleanArchitecture.Application",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 32,
+        "numberOfCodeFiles": 32,
+        "linesTotal": 1208,
+        "linesOfCode": 1208,
+        "totalApiScanned": 828,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "4df8818f-fabd-4c04-9f1b-dcd3efbfd7d7",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.EntityFrameworkCore 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b399f3b8-5f79-494a-af16-4f66c59b841b",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.Application.Tests\\CleanArchitecture.Application.Tests.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "CleanArchitecture.Application.Tests",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": true,
+        "numberOfFiles": 11,
+        "numberOfCodeFiles": 9,
+        "linesTotal": 3100,
+        "linesOfCode": 461,
+        "totalApiScanned": 161,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "6a2ba3e8-a92a-4270-af68-86504baa9427",
+          "ruleId": "NuGet.0005",
+          "projectPath": "CleanArchitecture.Application.Tests\\CleanArchitecture.Application.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+              "protected": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Application.Tests\\CleanArchitecture.Application.Tests.csproj",
+            "snippet": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "protectedSnippet": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "label": "xunit 2.9.3",
+            "properties": {
+              "PackageId": "xunit",
+              "PackageVersion": "2.9.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "7e1f77a4-ef18-4a70-81ec-90b4a226c8c4",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.Application.Tests\\CleanArchitecture.Application.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Application.Tests\\CleanArchitecture.Application.Tests.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "CleanArchitecture.Domain",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 59,
+        "numberOfCodeFiles": 59,
+        "linesTotal": 2206,
+        "linesOfCode": 2206,
+        "totalApiScanned": 1371,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "41c9b2cd-2d64-4e2a-a6c9-797187a23f14",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.Domain.Tests\\CleanArchitecture.Domain.Tests.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "CleanArchitecture.Domain.Tests",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": true,
+        "numberOfFiles": 28,
+        "numberOfCodeFiles": 26,
+        "linesTotal": 4707,
+        "linesOfCode": 2068,
+        "totalApiScanned": 727,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "5bf587b2-c23c-497e-86e5-5409d885c6f7",
+          "ruleId": "NuGet.0005",
+          "projectPath": "CleanArchitecture.Domain.Tests\\CleanArchitecture.Domain.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+              "protected": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Domain.Tests\\CleanArchitecture.Domain.Tests.csproj",
+            "snippet": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "protectedSnippet": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "label": "xunit 2.9.3",
+            "properties": {
+              "PackageId": "xunit",
+              "PackageVersion": "2.9.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f26e7f21-bca5-43f8-a7af-b867be84b732",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.Domain.Tests\\CleanArchitecture.Domain.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Domain.Tests\\CleanArchitecture.Domain.Tests.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.gRPC\\CleanArchitecture.gRPC.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "CleanArchitecture.gRPC",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 8,
+        "numberOfCodeFiles": 8,
+        "linesTotal": 182,
+        "linesOfCode": 182,
+        "totalApiScanned": 62,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "99327cf9-ee4d-4ed4-9704-6c13329514d3",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.gRPC\\CleanArchitecture.gRPC.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.gRPC\\CleanArchitecture.gRPC.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.gRPC.Tests\\CleanArchitecture.gRPC.Tests.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "CleanArchitecture.gRPC.Tests",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": true,
+        "numberOfFiles": 6,
+        "numberOfCodeFiles": 4,
+        "linesTotal": 2874,
+        "linesOfCode": 235,
+        "totalApiScanned": 178,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "0047011e-27ac-49e7-a043-6b21424fb2f2",
+          "ruleId": "NuGet.0005",
+          "projectPath": "CleanArchitecture.gRPC.Tests\\CleanArchitecture.gRPC.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+              "protected": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.gRPC.Tests\\CleanArchitecture.gRPC.Tests.csproj",
+            "snippet": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "protectedSnippet": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "label": "xunit 2.9.3",
+            "properties": {
+              "PackageId": "xunit",
+              "PackageVersion": "2.9.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "010fcaf0-4fdd-4ffd-b994-321183c9d36a",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.gRPC.Tests\\CleanArchitecture.gRPC.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.gRPC.Tests\\CleanArchitecture.gRPC.Tests.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 6,
+      "properties": {
+        "appName": "CleanArchitecture.Infrastructure",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 40,
+        "numberOfCodeFiles": 40,
+        "linesTotal": 2358,
+        "linesOfCode": 2358,
+        "totalApiScanned": 301,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "f6832f6a-c769-48c3-ab71-7fd7fd851015",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.EntityFrameworkCore 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "a36c49df-13f1-4997-834b-ab58a2917e5e",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Design, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.EntityFrameworkCore.Design, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Design, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Design, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.EntityFrameworkCore.Design 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Design",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e99baba0-4d8c-4728-904b-052cc746ec27",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Relational, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.EntityFrameworkCore.Relational, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Relational, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Relational, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.EntityFrameworkCore.Relational 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Relational",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "052eb792-97f1-44ae-8086-81fe8c2e4358",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.SqlServer, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.EntityFrameworkCore.SqlServer, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.SqlServer, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.SqlServer, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.EntityFrameworkCore.SqlServer 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.SqlServer",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f5963c20-108c-4b79-bc7f-57b5ae9c40c2",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Tools, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.EntityFrameworkCore.Tools, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Tools, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Tools, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.EntityFrameworkCore.Tools 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Tools",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "4245b5a1-aa70-44b6-86d6-543ed67c1218",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.Infrastructure.Tests\\CleanArchitecture.Infrastructure.Tests.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "CleanArchitecture.Infrastructure.Tests",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": true,
+        "numberOfFiles": 6,
+        "numberOfCodeFiles": 4,
+        "linesTotal": 2852,
+        "linesOfCode": 213,
+        "totalApiScanned": 39,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "53b735ec-96fa-44ff-be68-5f42abac3eea",
+          "ruleId": "NuGet.0005",
+          "projectPath": "CleanArchitecture.Infrastructure.Tests\\CleanArchitecture.Infrastructure.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+              "protected": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Infrastructure.Tests\\CleanArchitecture.Infrastructure.Tests.csproj",
+            "snippet": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "protectedSnippet": "xunit, 2.9.3\n\nRecommandation\u00A0:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "label": "xunit 2.9.3",
+            "properties": {
+              "PackageId": "xunit",
+              "PackageVersion": "2.9.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "6e22763b-55a3-496a-834c-d770aa2b8058",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.Infrastructure.Tests\\CleanArchitecture.Infrastructure.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Infrastructure.Tests\\CleanArchitecture.Infrastructure.Tests.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 18,
+      "properties": {
+        "appName": "CleanArchitecture.IntegrationTests",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": true,
+        "numberOfFiles": 22,
+        "numberOfCodeFiles": 20,
+        "linesTotal": 3720,
+        "linesOfCode": 1081,
+        "totalApiScanned": 472,
+        "minLinesOfCodeToChange": 15,
+        "maxLinesOfCodeToChange": 15
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "45d8c39c-d163-4432-b541-6a66b089f3e0",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Mvc.Testing, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.AspNetCore.Mvc.Testing, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+            "snippet": "Microsoft.AspNetCore.Mvc.Testing, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.AspNetCore.Mvc.Testing, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.AspNetCore.Mvc.Testing 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Mvc.Testing",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "19183d13-0f28-4afc-a370-60f3046871a6",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Proxies, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 11.0.0-rc.3.26522.148",
+              "protected": "Microsoft.EntityFrameworkCore.Proxies, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 11.0.0-rc.3.26522.148"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Proxies, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 11.0.0-rc.3.26522.148",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Proxies, 11.0.0-rc.1.26425.128\n\nRecommandation\u00A0:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 11.0.0-rc.3.26522.148",
+            "label": "Microsoft.EntityFrameworkCore.Proxies 11.0.0-rc.1.26425.128",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Proxies",
+              "PackageVersion": "11.0.0-rc.1.26425.128",
+              "PackageNewVersion": "11.0.0-rc.3.26522.148",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "32a36e93-1401-4493-9970-32ef6703bdf7",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        },
+        {
+          "incidentId": "b08d150b-ae85-47c0-8094-b8c3448c5ec9",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var content = await response.Content.ReadAsStringAsync();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\UtilityTests\\HealthChecksTests.cs",
+            "snippet": "var content = await response.Content.ReadAsStringAsync();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "987"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "2621e0ee-8db4-4c7b-8a67-280e3097e927",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Support for empty environment variables ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Environment.SetEnvironmentVariable(\u0022RedisHostName\u0022, $\u0022localhost:{redisPort}\u0022);",
+              "protected": "M:System.Environment.SetEnvironmentVariable(System.String,System.String)"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Infrastructure\\CleanArchitectureWebApplicationFactory.cs",
+            "snippet": "Environment.SetEnvironmentVariable(\u0022RedisHostName\u0022, $\u0022localhost:{redisPort}\u0022);",
+            "protectedSnippet": "M:System.Environment.SetEnvironmentVariable(System.String,System.String)",
+            "label": "M:System.Environment.SetEnvironmentVariable(System.String,System.String)",
+            "properties": {
+              "CharCount": "2149"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/core-libraries/9.0/empty-env-variable.md",
+                "isCustom": false
+              }
+            ],
+            "line": 36,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "384920b3-9850-438c-b515-b2a3aae5b1d3",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Support for empty environment variables ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Environment.SetEnvironmentVariable(\u0022ConnectionStrings:DefaultConnection\u0022,\r\n            GlobalSetupFixture.DatabaseConnectionString);",
+              "protected": "M:System.Environment.SetEnvironmentVariable(System.String,System.String)"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Infrastructure\\CleanArchitectureWebApplicationFactory.cs",
+            "snippet": "Environment.SetEnvironmentVariable(\u0022ConnectionStrings:DefaultConnection\u0022,\r\n            GlobalSetupFixture.DatabaseConnectionString);",
+            "protectedSnippet": "M:System.Environment.SetEnvironmentVariable(System.String,System.String)",
+            "label": "M:System.Environment.SetEnvironmentVariable(System.String,System.String)",
+            "properties": {
+              "CharCount": "2149"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/core-libraries/9.0/empty-env-variable.md",
+                "isCustom": false
+              }
+            ],
+            "line": 34,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "31efe223-e046-4730-b0e3-2c6fcfbc7ec7",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CTenantViewModel\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\ExternalServices\\RedisTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CTenantViewModel\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "1281"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 22,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "df858ce7-2103-4258-b737-e50f7b7a2051",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public static async Task\u003CResponseMessage\u003CT\u003E?\u003E ReadAsJsonAsync(this HttpContent httpContent)",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Extensions\\HttpExtensions.cs",
+            "snippet": "public static async Task\u003CResponseMessage\u003CT\u003E?\u003E ReadAsJsonAsync(this HttpContent httpContent)",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "1840"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 30,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "bcca35ab-4fe4-472a-bff6-f46bd80b44f0",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CGuid\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Controller\\UserControllerTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CGuid\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "7993"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 226,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "4fbefab1-cd83-43ac-abbc-cd4f5d68a06a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CUserViewModel\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Controller\\UserControllerTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CUserViewModel\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "7993"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 133,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "f5f93c8c-6897-4a09-a672-d68362b1e13b",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CUserViewModel\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Controller\\UserControllerTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CUserViewModel\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "7993"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 89,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "89be8785-1c9c-491a-8172-f66d065e41f3",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CPagedResult\u003CUserViewModel\u003E\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Controller\\UserControllerTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CPagedResult\u003CUserViewModel\u003E\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "7993"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 71,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "c5cb0c46-a89f-4b27-9f49-470f4a3c89d1",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CUserViewModel\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Controller\\UserControllerTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CUserViewModel\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "7993"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 52,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "cc5bef09-4c59-4773-8a19-41e6b6f00052",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CPagedResult\u003CUserViewModel\u003E\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Controller\\UserControllerTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CPagedResult\u003CUserViewModel\u003E\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "7993"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 29,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "272cfb80-eb85-4d5b-b002-38e95018be35",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CPagedResult\u003CTenantViewModel\u003E\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Controller\\TenantControllerTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CPagedResult\u003CTenantViewModel\u003E\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "5290"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 77,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "49767ccf-24a1-4b49-8316-37b1ebc22e32",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CTenantViewModel\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Controller\\TenantControllerTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CTenantViewModel\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "5290"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 64,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "179e1c62-0345-4b9b-9034-58c57863cd20",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CPagedResult\u003CTenantViewModel\u003E\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Controller\\TenantControllerTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CPagedResult\u003CTenantViewModel\u003E\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "5290"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 44,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "09d58bc4-11b4-48d4-98a1-5bbc3b82a3a8",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var message = await response.Content.ReadAsJsonAsync\u003CTenantViewModel\u003E();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.IntegrationTests\\Controller\\TenantControllerTests.cs",
+            "snippet": "var message = await response.Content.ReadAsJsonAsync\u003CTenantViewModel\u003E();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "5290"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 26,
+            "column": 8
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.Proto\\CleanArchitecture.Proto.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 5,
+      "properties": {
+        "appName": "CleanArchitecture.Proto",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 0,
+        "numberOfCodeFiles": 0,
+        "linesTotal": 0,
+        "linesOfCode": 0,
+        "totalApiScanned": 492,
+        "minLinesOfCodeToChange": 4,
+        "maxLinesOfCodeToChange": 4
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "125c1461-5c42-4410-a791-c97072556790",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.Proto\\CleanArchitecture.Proto.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Proto\\CleanArchitecture.Proto.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        },
+        {
+          "incidentId": "0271eb0b-2315-41bc-bc92-ab2e49a1383e",
+          "ruleId": "Api.0002",
+          "description": "Breaking change: Ambiguous overload resolution affecting StringValues implicit operators ",
+          "projectPath": "CleanArchitecture.Proto\\CleanArchitecture.Proto.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "byte[] descriptorData = global::System.Convert.FromBase64String(\n          string.Concat(\n            \u0022ChRUZW5hbnRzL01vZGVscy5wcm90byJICgZUZW5hbnQSCgoCaWQYASABKAkS\u0022,\n            \u0022DAoEbmFtZRgCIAEoCRIWCglkZWxldGVkQXQYAyABKAlIAIgBAUIMCgpfZGVs\u0022,\n            \u0022ZXRlZEF0IjEKFUdldFRlbmFudHNCeUlkc1Jlc3VsdBIYCgd0ZW5hbnRzGAEg\u0022,\n            \u0022AygLMgcuVGVuYW50IiUKFkdldFRlbmFudHNCeUlkc1JlcXVlc3QSCwoDaWRz\u0022,\n            \u0022GAEgAygJQiKqAh9DbGVhbkFyY2hpdGVjdHVyZS5Qcm90by5UZW5hbnRzYgZw\u0022,\n            \u0022cm90bzM=\u0022));",
+              "protected": "M:System.String.Concat(System.ReadOnlySpan{System.String})"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Proto\\obj\\Debug\\net10.0\\Tenants\\Models.cs",
+            "snippet": "byte[] descriptorData = global::System.Convert.FromBase64String(\n          string.Concat(\n            \u0022ChRUZW5hbnRzL01vZGVscy5wcm90byJICgZUZW5hbnQSCgoCaWQYASABKAkS\u0022,\n            \u0022DAoEbmFtZRgCIAEoCRIWCglkZWxldGVkQXQYAyABKAlIAIgBAUIMCgpfZGVs\u0022,\n            \u0022ZXRlZEF0IjEKFUdldFRlbmFudHNCeUlkc1Jlc3VsdBIYCgd0ZW5hbnRzGAEg\u0022,\n            \u0022AygLMgcuVGVuYW50IiUKFkdldFRlbmFudHNCeUlkc1JlcXVlc3QSCwoDaWRz\u0022,\n            \u0022GAEgAygJQiKqAh9DbGVhbkFyY2hpdGVjdHVyZS5Qcm90by5UZW5hbnRzYgZw\u0022,\n            \u0022cm90bzM=\u0022));",
+            "protectedSnippet": "M:System.String.Concat(System.ReadOnlySpan{System.String})",
+            "label": "M:System.String.Concat(System.ReadOnlySpan{System.String})",
+            "properties": {
+              "CharCount": "25724"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/core-libraries/9.0/ambiguous-overload.md",
+                "isCustom": false
+              }
+            ],
+            "line": 24,
+            "column": 6
+          }
+        },
+        {
+          "incidentId": "aee77906-eb3a-4071-b653-e11268cf11a0",
+          "ruleId": "Api.0002",
+          "description": "Breaking change: Ambiguous overload resolution affecting StringValues implicit operators ",
+          "projectPath": "CleanArchitecture.Proto\\CleanArchitecture.Proto.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "byte[] descriptorData = global::System.Convert.FromBase64String(\n          string.Concat(\n            \u0022ChRUZW5hbnRzL01vZGVscy5wcm90byJICgZUZW5hbnQSCgoCaWQYASABKAkS\u0022,\n            \u0022DAoEbmFtZRgCIAEoCRIWCglkZWxldGVkQXQYAyABKAlIAIgBAUIMCgpfZGVs\u0022,\n            \u0022ZXRlZEF0IjEKFUdldFRlbmFudHNCeUlkc1Jlc3VsdBIYCgd0ZW5hbnRzGAEg\u0022,\n            \u0022AygLMgcuVGVuYW50IiUKFkdldFRlbmFudHNCeUlkc1JlcXVlc3QSCwoDaWRz\u0022,\n            \u0022GAEgAygJQiKqAh9DbGVhbkFyY2hpdGVjdHVyZS5Qcm90by5UZW5hbnRzYgZw\u0022,\n            \u0022cm90bzM=\u0022));",
+              "protected": "M:System.String.Concat(System.ReadOnlySpan{System.String})"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Proto\\obj\\Debug\\net10.0\\Tenants\\Models.cs",
+            "snippet": "byte[] descriptorData = global::System.Convert.FromBase64String(\n          string.Concat(\n            \u0022ChRUZW5hbnRzL01vZGVscy5wcm90byJICgZUZW5hbnQSCgoCaWQYASABKAkS\u0022,\n            \u0022DAoEbmFtZRgCIAEoCRIWCglkZWxldGVkQXQYAyABKAlIAIgBAUIMCgpfZGVs\u0022,\n            \u0022ZXRlZEF0IjEKFUdldFRlbmFudHNCeUlkc1Jlc3VsdBIYCgd0ZW5hbnRzGAEg\u0022,\n            \u0022AygLMgcuVGVuYW50IiUKFkdldFRlbmFudHNCeUlkc1JlcXVlc3QSCwoDaWRz\u0022,\n            \u0022GAEgAygJQiKqAh9DbGVhbkFyY2hpdGVjdHVyZS5Qcm90by5UZW5hbnRzYgZw\u0022,\n            \u0022cm90bzM=\u0022));",
+            "protectedSnippet": "M:System.String.Concat(System.ReadOnlySpan{System.String})",
+            "label": "M:System.String.Concat(System.ReadOnlySpan{System.String})",
+            "properties": {
+              "CharCount": "25724"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/core-libraries/9.0/ambiguous-overload.md",
+                "isCustom": false
+              }
+            ],
+            "line": 24,
+            "column": 6
+          }
+        },
+        {
+          "incidentId": "4f88b799-4e70-453a-9676-4d172669c089",
+          "ruleId": "Api.0002",
+          "description": "Breaking change: Ambiguous overload resolution affecting StringValues implicit operators ",
+          "projectPath": "CleanArchitecture.Proto\\CleanArchitecture.Proto.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "byte[] descriptorData = global::System.Convert.FromBase64String(\n          string.Concat(\n            \u0022ChJVc2Vycy9Nb2RlbHMucHJvdG8icAoIR3JwY1VzZXISCgoCaWQYASABKAkS\u0022,\n            \u0022EQoJZmlyc3ROYW1lGAMgASgJEhAKCGxhc3ROYW1lGAQgASgJEg0KBWVtYWls\u0022,\n            \u0022GAUgASgJEhYKCWRlbGV0ZWRBdBgGIAEoCUgAiAEBQgwKCl9kZWxldGVkQXQi\u0022,\n            \u0022LwoTR2V0VXNlcnNCeUlkc1Jlc3VsdBIYCgV1c2VycxgBIAMoCzIJLkdycGNV\u0022,\n            \u0022c2VyIiMKFEdldFVzZXJzQnlJZHNSZXF1ZXN0EgsKA2lkcxgBIAMoCUIgqgId\u0022,\n            \u0022Q2xlYW5BcmNoaXRlY3R1cmUuUHJvdG8uVXNlcnNiBnByb3RvMw==\u0022));",
+              "protected": "M:System.String.Concat(System.ReadOnlySpan{System.String})"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Proto\\obj\\Debug\\net10.0\\Users\\Models.cs",
+            "snippet": "byte[] descriptorData = global::System.Convert.FromBase64String(\n          string.Concat(\n            \u0022ChJVc2Vycy9Nb2RlbHMucHJvdG8icAoIR3JwY1VzZXISCgoCaWQYASABKAkS\u0022,\n            \u0022EQoJZmlyc3ROYW1lGAMgASgJEhAKCGxhc3ROYW1lGAQgASgJEg0KBWVtYWls\u0022,\n            \u0022GAUgASgJEhYKCWRlbGV0ZWRBdBgGIAEoCUgAiAEBQgwKCl9kZWxldGVkQXQi\u0022,\n            \u0022LwoTR2V0VXNlcnNCeUlkc1Jlc3VsdBIYCgV1c2VycxgBIAMoCzIJLkdycGNV\u0022,\n            \u0022c2VyIiMKFEdldFVzZXJzQnlJZHNSZXF1ZXN0EgsKA2lkcxgBIAMoCUIgqgId\u0022,\n            \u0022Q2xlYW5BcmNoaXRlY3R1cmUuUHJvdG8uVXNlcnNiBnByb3RvMw==\u0022));",
+            "protectedSnippet": "M:System.String.Concat(System.ReadOnlySpan{System.String})",
+            "label": "M:System.String.Concat(System.ReadOnlySpan{System.String})",
+            "properties": {
+              "CharCount": "28132"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/core-libraries/9.0/ambiguous-overload.md",
+                "isCustom": false
+              }
+            ],
+            "line": 24,
+            "column": 6
+          }
+        },
+        {
+          "incidentId": "a206a411-fb1f-4657-9d20-4ce32c294778",
+          "ruleId": "Api.0002",
+          "description": "Breaking change: Ambiguous overload resolution affecting StringValues implicit operators ",
+          "projectPath": "CleanArchitecture.Proto\\CleanArchitecture.Proto.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "byte[] descriptorData = global::System.Convert.FromBase64String(\n          string.Concat(\n            \u0022ChJVc2Vycy9Nb2RlbHMucHJvdG8icAoIR3JwY1VzZXISCgoCaWQYASABKAkS\u0022,\n            \u0022EQoJZmlyc3ROYW1lGAMgASgJEhAKCGxhc3ROYW1lGAQgASgJEg0KBWVtYWls\u0022,\n            \u0022GAUgASgJEhYKCWRlbGV0ZWRBdBgGIAEoCUgAiAEBQgwKCl9kZWxldGVkQXQi\u0022,\n            \u0022LwoTR2V0VXNlcnNCeUlkc1Jlc3VsdBIYCgV1c2VycxgBIAMoCzIJLkdycGNV\u0022,\n            \u0022c2VyIiMKFEdldFVzZXJzQnlJZHNSZXF1ZXN0EgsKA2lkcxgBIAMoCUIgqgId\u0022,\n            \u0022Q2xlYW5BcmNoaXRlY3R1cmUuUHJvdG8uVXNlcnNiBnByb3RvMw==\u0022));",
+              "protected": "M:System.String.Concat(System.ReadOnlySpan{System.String})"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Proto\\obj\\Debug\\net10.0\\Users\\Models.cs",
+            "snippet": "byte[] descriptorData = global::System.Convert.FromBase64String(\n          string.Concat(\n            \u0022ChJVc2Vycy9Nb2RlbHMucHJvdG8icAoIR3JwY1VzZXISCgoCaWQYASABKAkS\u0022,\n            \u0022EQoJZmlyc3ROYW1lGAMgASgJEhAKCGxhc3ROYW1lGAQgASgJEg0KBWVtYWls\u0022,\n            \u0022GAUgASgJEhYKCWRlbGV0ZWRBdBgGIAEoCUgAiAEBQgwKCl9kZWxldGVkQXQi\u0022,\n            \u0022LwoTR2V0VXNlcnNCeUlkc1Jlc3VsdBIYCgV1c2VycxgBIAMoCzIJLkdycGNV\u0022,\n            \u0022c2VyIiMKFEdldFVzZXJzQnlJZHNSZXF1ZXN0EgsKA2lkcxgBIAMoCUIgqgId\u0022,\n            \u0022Q2xlYW5BcmNoaXRlY3R1cmUuUHJvdG8uVXNlcnNiBnByb3RvMw==\u0022));",
+            "protectedSnippet": "M:System.String.Concat(System.ReadOnlySpan{System.String})",
+            "label": "M:System.String.Concat(System.ReadOnlySpan{System.String})",
+            "properties": {
+              "CharCount": "28132"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/core-libraries/9.0/ambiguous-overload.md",
+                "isCustom": false
+              }
+            ],
+            "line": 24,
+            "column": 6
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 6,
+      "properties": {
+        "appName": "CleanArchitecture.ServiceDefaults",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 2,
+        "numberOfCodeFiles": 2,
+        "linesTotal": 211,
+        "linesOfCode": 211,
+        "totalApiScanned": 95,
+        "minLinesOfCodeToChange": 1,
+        "maxLinesOfCodeToChange": 1
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "06ac27e8-a215-42af-a1e3-31b6447991db",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Http.Resilience, 10.10.0\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Http.Resilience, and replace with new package Microsoft.Extensions.Http.Resilience 10.11.0",
+              "protected": "Microsoft.Extensions.Http.Resilience, 10.10.0\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Http.Resilience, and replace with new package Microsoft.Extensions.Http.Resilience 10.11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+            "snippet": "Microsoft.Extensions.Http.Resilience, 10.10.0\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Http.Resilience, and replace with new package Microsoft.Extensions.Http.Resilience 10.11.0",
+            "protectedSnippet": "Microsoft.Extensions.Http.Resilience, 10.10.0\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.Http.Resilience, and replace with new package Microsoft.Extensions.Http.Resilience 10.11.0",
+            "label": "Microsoft.Extensions.Http.Resilience 10.10.0",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Http.Resilience",
+              "PackageVersion": "10.10.0",
+              "PackageNewVersion": "10.11.0",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "772305a5-c54d-407f-bef2-bf520da183d2",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.ServiceDiscovery, 10.10.0\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.ServiceDiscovery, and replace with new package Microsoft.Extensions.ServiceDiscovery 10.11.0",
+              "protected": "Microsoft.Extensions.ServiceDiscovery, 10.10.0\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.ServiceDiscovery, and replace with new package Microsoft.Extensions.ServiceDiscovery 10.11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+            "snippet": "Microsoft.Extensions.ServiceDiscovery, 10.10.0\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.ServiceDiscovery, and replace with new package Microsoft.Extensions.ServiceDiscovery 10.11.0",
+            "protectedSnippet": "Microsoft.Extensions.ServiceDiscovery, 10.10.0\n\nRecommandation\u00A0:\n\nRemove Microsoft.Extensions.ServiceDiscovery, and replace with new package Microsoft.Extensions.ServiceDiscovery 10.11.0",
+            "label": "Microsoft.Extensions.ServiceDiscovery 10.10.0",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.ServiceDiscovery",
+              "PackageVersion": "10.10.0",
+              "PackageNewVersion": "10.11.0",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "90961b94-5f06-4513-a4f0-65c39ed9c5e7",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "OpenTelemetry.Instrumentation.AspNetCore, 1.19.0\n\nRecommandation\u00A0:\n\nRemove OpenTelemetry.Instrumentation.AspNetCore, and replace with new package OpenTelemetry.Instrumentation.AspNetCore 1.20.1",
+              "protected": "OpenTelemetry.Instrumentation.AspNetCore, 1.19.0\n\nRecommandation\u00A0:\n\nRemove OpenTelemetry.Instrumentation.AspNetCore, and replace with new package OpenTelemetry.Instrumentation.AspNetCore 1.20.1"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+            "snippet": "OpenTelemetry.Instrumentation.AspNetCore, 1.19.0\n\nRecommandation\u00A0:\n\nRemove OpenTelemetry.Instrumentation.AspNetCore, and replace with new package OpenTelemetry.Instrumentation.AspNetCore 1.20.1",
+            "protectedSnippet": "OpenTelemetry.Instrumentation.AspNetCore, 1.19.0\n\nRecommandation\u00A0:\n\nRemove OpenTelemetry.Instrumentation.AspNetCore, and replace with new package OpenTelemetry.Instrumentation.AspNetCore 1.20.1",
+            "label": "OpenTelemetry.Instrumentation.AspNetCore 1.19.0",
+            "properties": {
+              "PackageId": "OpenTelemetry.Instrumentation.AspNetCore",
+              "PackageVersion": "1.19.0",
+              "PackageNewVersion": "1.20.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b9f99166-3851-41cc-9b97-a5e837e4adbc",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "OpenTelemetry.Instrumentation.Http, 1.19.0\n\nRecommandation\u00A0:\n\nRemove OpenTelemetry.Instrumentation.Http, and replace with new package OpenTelemetry.Instrumentation.Http 1.20.1",
+              "protected": "OpenTelemetry.Instrumentation.Http, 1.19.0\n\nRecommandation\u00A0:\n\nRemove OpenTelemetry.Instrumentation.Http, and replace with new package OpenTelemetry.Instrumentation.Http 1.20.1"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+            "snippet": "OpenTelemetry.Instrumentation.Http, 1.19.0\n\nRecommandation\u00A0:\n\nRemove OpenTelemetry.Instrumentation.Http, and replace with new package OpenTelemetry.Instrumentation.Http 1.20.1",
+            "protectedSnippet": "OpenTelemetry.Instrumentation.Http, 1.19.0\n\nRecommandation\u00A0:\n\nRemove OpenTelemetry.Instrumentation.Http, and replace with new package OpenTelemetry.Instrumentation.Http 1.20.1",
+            "label": "OpenTelemetry.Instrumentation.Http 1.19.0",
+            "properties": {
+              "PackageId": "OpenTelemetry.Instrumentation.Http",
+              "PackageVersion": "1.19.0",
+              "PackageNewVersion": "1.20.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e2cd412f-b87d-4f30-9d62-8555b42d934a",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        },
+        {
+          "incidentId": "36557142-86f3-4e1b-b678-6215569a16dc",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "CleanArchitecture.ServiceDefaults\\CleanArchitecture.ServiceDefaults.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var enableHttpTraces = builder.Configuration.GetValue\u003Cbool?\u003E(\u0022APP_ENABLE_HTTP_TRACES\u0022) ?? false;",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.ServiceDefaults\\Extensions.cs",
+            "snippet": "var enableHttpTraces = builder.Configuration.GetValue\u003Cbool?\u003E(\u0022APP_ENABLE_HTTP_TRACES\u0022) ?? false;",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "properties": {
+              "CharCount": "4760"
+            },
+            "links": [
+              {
+                "title": "Documentation sur les API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 42,
+            "column": 8
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CleanArchitecture.Shared\\CleanArchitecture.Shared.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "CleanArchitecture.Shared",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net10.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 12,
+        "numberOfCodeFiles": 12,
+        "linesTotal": 164,
+        "linesOfCode": 164,
+        "totalApiScanned": 258,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "5f485acf-246b-4e87-b0c3-90ecfbc22df2",
+          "ruleId": "Project.0002",
+          "projectPath": "CleanArchitecture.Shared\\CleanArchitecture.Shared.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+              "protected": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0"
+            },
+            "kind": "File",
+            "path": "CleanArchitecture.Shared\\CleanArchitecture.Shared.csproj",
+            "snippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "protectedSnippet": "Infrastructure cible actuelle: net10.0\nInfrastructure cible recommand\u00E9: net11.0",
+            "properties": {
+              "CurrentTargetFramework": "net10.0",
+              "RecommendedTargetFramework": "net11.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Le ou les infrastructures cibles du projet doivent \u00EAtre remplac\u00E9es par la nouvelle infrastructure cible que vous avez s\u00E9lectionn\u00E9e pour cette mise \u00E0 niveau.\n\nPendant la mise \u00E0 niveau, l\u2019infrastructure cible est ajust\u00E9e en fonction de la plateforme correspondante, le cas \u00E9ch\u00E9ant. Dans certains cas, le projet entra\u00EEnera plusieurs infrastructures cibles apr\u00E8s la mise \u00E0 niveau s\u2019il utilisait des fonctionnalit\u00E9s qui ont d\u00E9sormais leurs propres plateformes dans les infrastructures .NET modernes (Windows, iOS, Android, etc.).",
+      "label": "Le ou les frameworks cibles du projet doivent \u00EAtre modifi\u00E9s",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Vue d\u2019ensemble du transfert de .NET Framework vers .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": "Kits de d\u00E9veloppement logiciel (SDK) de projet .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "L\u2019API est incompatible au niveau du code source pour la version .NET s\u00E9lectionn\u00E9e\u00A0: des modifications du code sont n\u00E9cessaires pour compiler avec succ\u00E8s en ciblant une nouvelle version, comme la suppression d\u2019API obsol\u00E8tes ou la modification des signatures de m\u00E9thode.",
+      "label": "Source incompatible avec la version .NET s\u00E9lectionn\u00E9e",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Changements cassants dans .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "La mise \u00E0 niveau du package NuGet est recommand\u00E9e pour l\u2019infrastructure cible s\u00E9lectionn\u00E9e.\n\nLes packages .NET standard sont recommand\u00E9s pour avoir des versions correspondant \u00E0 la version de .NET cibl\u00E9e par le projet.\n\nCertains autres packages fonctionnent \u00E9galement mieux pour les infrastructures cibles s\u00E9lectionn\u00E9es.",
+      "label": "La mise \u00E0 niveau du package NuGet est recommand\u00E9e",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "isFeature": false,
+      "description": "L\u2019API est binaire incompatible avec la version .NET s\u00E9lectionn\u00E9e\u00A0: cela affecte les binaires existants et n\u00E9cessite souvent une recompilation, car l\u2019API a chang\u00E9 de mani\u00E8re \u00E0 emp\u00EAcher le chargement ou l\u2019ex\u00E9cution des binaires plus anciens.",
+      "label": "Binaire incompatible avec la version .NET s\u00E9lectionn\u00E9e",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Changements cassants dans .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "L\u2019API pr\u00E9sente un changement de comportement dans la version .NET s\u00E9lectionn\u00E9e\u00A0: le code et les binaires peuvent se comporter diff\u00E9remment \u00E0 l\u2019ex\u00E9cution sans n\u00E9cessiter de recompilation, mais ce nouveau comportement peut \u00EAtre ind\u00E9sirable et n\u00E9cessiter des mises \u00E0 jour.",
+      "label": "Modification du comportement dans la version .NET s\u00E9lectionn\u00E9e",
+      "severity": "Potential",
+      "effort": 1
+    },
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "Le package NuGet est d\u00E9conseill\u00E9.\n\nAcc\u00E9dez \u00E0 sa documentation et s\u2019il existe un guide pour remplacer les fonctionnalit\u00E9s fournies par ce package.",
+      "label": "Le package NuGet est d\u00E9conseill\u00E9",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
